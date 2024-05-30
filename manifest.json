@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Record and Replay",
+    "description": "It records the screen",
+    "icons": {
+        "128": "/images/recording.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/images/recording.png"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab",
+        "downloads",
+        "storage"
+    ],
+
+    "version": "1.0.0"
+}
