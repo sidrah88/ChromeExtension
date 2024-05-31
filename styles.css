@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contentpage {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    min-width: 300px;
+}
+
+.button_cont {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.button_cont button {
+    width: 100%;
+}
+
+.button_cont button:hover{
+    box-shadow: 1px 0px 10p #eee;
+    background-color: #757675; 
+}
+
+.button_cont button img {
+    width: 40px; 
+    height: 40px;
+    vertical-align: middle;
+}
