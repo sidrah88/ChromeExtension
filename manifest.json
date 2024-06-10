@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Record and Replay",
-    "description": "It records the screen",
+    "description": "Record and replay user journeys",
     "icons": {
         "128": "/images/recording.png"
     },
@@ -34,7 +34,8 @@
         "tabs",
         "activeTab",
         "downloads",
-        "storage"
+        "storage",
+        "desktopCapture"
     ],
 
     "version": "1.0.0"
